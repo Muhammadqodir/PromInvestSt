@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,900,800,700,600,500,300,200,100);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,900,800,700,600,500,300,200,100);
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.c-primary{
+  color: #434D9C;
+}
+.c-secondary{
+  color: #FFA800;
+}
+
+.animated-title {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  cursor: pointer;
+  font-family: "Roboto Condensed";
+  transition: .5s;
+}
+
+.animated-title:hover .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -45px;
+  color: #FFA800;
+  transition: .5s;
+}
+
+.animated-title:hover .sub-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #434D9C;
+  opacity: 0.04;
+  transition: .5s;
+}
+
+.animated-title:not(:hover) .title {
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: -25px;
+  color: #000000;
+  transition: .5s;
+}
+
+.animated-title:not(:hover) .sub-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #434D9C;
+  opacity: 0.1;
+  transition: .5s;
+}
+
+.gradient-box {
+  background: linear-gradient(to right, #F3F3F3, #EFECEC00);
+  padding: 24px;
+}
+
+.blur-box {
+  margin: 24px;
+  background: rgba(67, 77, 156, 0.1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 30px rgba(67, 77, 156, 0.1);
+  color: #434D9C;
+}
+
+.rect-box {
+  padding: 24px;
+  background: rgba(67, 77, 156, 0.1);
+}
+
+.box {
+  margin: 24px;
+}
+
+.xol-title{
+  padding: 30px;
+  text-align: center;
+}
+
+.xol-title .title{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  margin: auto;
+}
+
+.xol-title .xol{
+  margin-left: -20px;
+  width: 100px;
+  height: 40px;
+  background-color: #434D9C;
+  position: absolute;
+  filter: blur(25px);
+}
+
+.num-li{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: -40px;
+  background-color: #434D9C;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px 10px #434D9C;
+  color: #fff;
+}
+
+.num-li .num{
+  position: absolute;
+  left: 6px;
+  margin-top: -3px;
+}
