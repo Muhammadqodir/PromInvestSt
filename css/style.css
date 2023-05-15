@@ -692,3 +692,21 @@ nav .navbar-nav li a {
   font-size: 18px;
   transition: .3s;
 }
+
+.contact-form{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 40px;
+  box-shadow: 0px 4px 8px #dbdbdb;
+  border-radius: 40px;
+  border-top: solid 2px #FFA800;
+}
+
+.custom-input{
+  padding: 14px 24px;
+  width: 100%;
+  font-size: 14px !important;
+  border-radius: 24px;
+  border: solid 2px #ccc;
+  margin-bottom: 14px !important;
+}
