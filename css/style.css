@@ -225,7 +225,6 @@ nav .navbar-nav li a {
   backdrop-filter: blur(5px);
 }
 
-
 .service {
   margin-bottom: 40px;
   cursor: pointer;
@@ -250,33 +249,56 @@ nav .navbar-nav li a {
   height: 130px;
 }
 
-.footer{
+.footer {
   background-color: #7C7C7C;
   padding-top: 40px;
   padding-bottom: 40px;
   color: #fff;
 }
 
-.img-white{
+.img-white {
   filter: invert(100%) sepia(0%) saturate(33%) hue-rotate(73deg) brightness(107%) contrast(107%);
 }
 
-.footer .phone-link{
+.footer .phone-link {
   color: #fff;
   font-weight: bold;
 }
 
-.footer .link{
+.footer .link {
   color: #fff;
   font-weight: 500;
   font-family: "Roboto Condensed";
 }
 
-.footer p{
+.footer p {
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
-.footer .section{
+.footer .section {
   margin-top: 20px;
+}
+
+.partners {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.partners .title{
+  width: 100%;
+}
+
+.partners .partner:hover {
+  height: 60px;
+  margin: 20px;
+  filter: grayscale(0);
+  transform: .2s;
+}
+
+.partners .partner:not(:hover) {
+  height: 60px;
+  margin: 20px;
+  filter: grayscale(1);
+  transform: .2s;
 }
