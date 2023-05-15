@@ -3,7 +3,9 @@
 body {
   font-family: "Montserrat", sans-serif !important;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 .c-primary {
   color: #434D9C;
 }
@@ -308,6 +310,11 @@ nav .navbar-nav li a {
   margin-bottom: 50px;
 }
 
+.m-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .projects {
   height: 200px;
   overflow: hidden;
@@ -324,6 +331,29 @@ nav .navbar-nav li a {
 
 .projects:hover img {
   transform: scale(1);
+}
+
+.tools-circle{
+  margin: auto;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tools-circle:hover img{
+  width: 100%;
+  transform: scale(1.5);
+  padding: 0px !important;
+  transition: 0.5s all ease-in-out;
+}
+
+.tools-circle:not(:hover) img{
+  transform: scale(1);
+  width: 100%;
+  transition: 0.5s all ease-in-out;
 }
 
 .projects .description{
