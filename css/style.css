@@ -63,7 +63,7 @@ nav .navbar-nav li a {
 .static-title .title {
   font-size: 24px;
   font-weight: 400;
-  margin-top: -38px;
+  margin-top: -25px;
   color: #000000;
   transition: .5s;
 }
@@ -72,6 +72,7 @@ nav .navbar-nav li a {
   font-size: 46px;
   font-weight: bold;
   color: #434D9C;
+  line-height: 46px;
   opacity: 0.1;
   transition: .5s;
 }
@@ -658,4 +659,36 @@ nav .navbar-nav li a {
     color: #434D9C;
     font-weight: 500;
   }
+}
+
+.book-box{
+  min-height: 270px;
+}
+
+.book{
+  text-align: left;
+  width: 180px;
+  padding: 10px;
+}
+
+.custom-btn:not(:hover){
+  color: #FFA800;
+  background-color: transparent;
+  border: solid 2px #FFA800;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.custom-btn:hover{
+  color: #434D9C;
+  background-color: transparent;
+  border: solid 3px #434D9C;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .3s;
 }
