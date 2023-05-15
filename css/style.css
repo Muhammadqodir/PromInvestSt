@@ -1,15 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,900,800,700,600,500,300,200,100);
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,900,800,700,600,500,300,200,100);
 body {
   font-family: "Montserrat", sans-serif !important;
 }
 
-.c-primary{
+.c-primary {
   color: #434D9C;
 }
-.c-secondary{
+
+.c-secondary {
   color: #FFA800;
+}
+
+.nav-logo {
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav-search {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav .navbar-nav li a {
+  font-weight: 600 !important;
+}
+
+.box-gray {
+  background-color: #F7F7F7;
+  padding-top: 70px;
+  margin-top: -40px;
+  padding-bottom: 40px;
+}
+
+.vertical-line {
+  background-color: #ccc;
+  width: 1px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.static-title {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: "Roboto Condensed";
+  display: inline-block;
+  text-align: start;
+  margin-bottom: 24px;
+  transition: .5s;
+}
+
+.static-title .title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: -38px;
+  color: #000000;
+  transition: .5s;
+}
+
+.static-title .sub-title {
+  font-size: 46px;
+  font-weight: bold;
+  color: #434D9C;
+  opacity: 0.1;
+  transition: .5s;
 }
 
 .animated-title {
@@ -74,12 +134,12 @@ body {
   margin: 24px;
 }
 
-.xol-title{
+.xol-title {
   padding: 30px;
   text-align: center;
 }
 
-.xol-title .title{
+.xol-title .title {
   display: inline-block;
   font-size: 28px;
   font-weight: 400;
@@ -87,7 +147,7 @@ body {
   margin: auto;
 }
 
-.xol-title .xol{
+.xol-title .xol {
   margin-left: -20px;
   width: 100px;
   height: 40px;
@@ -96,7 +156,7 @@ body {
   filter: blur(25px);
 }
 
-.num-li{
+.num-li {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -111,8 +171,112 @@ body {
   color: #fff;
 }
 
-.num-li .num{
+.num-li .num {
   position: absolute;
   left: 6px;
   margin-top: -3px;
+}
+
+.advantage {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.advantage .title {
+  font-size: 18px;
+  height: 45px;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  color: #434D9C;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.advantage .sub-title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.advantage:hover img {
+  height: 90px;
+  filter: invert(61%) sepia(22%) saturate(6303%) hue-rotate(0deg) brightness(100%) contrast(109%);
+  transition: .2s;
+}
+
+.advantage:not(:hover) img {
+  height: 90px;
+  filter: invert(0%) sepia(4%) saturate(16%) hue-rotate(112deg) brightness(97%) contrast(103%);
+  transition: .2s;
+}
+
+.bg-box {
+  background-image: url("../assets/bg_0.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-color: #F7F7F7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-shadow: #fff 0px 0 10px;
+}
+
+.blur-nav {
+  background-color: #ffffff9c !important;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+
+.service {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.service .title {
+  font-size: 18px;
+  height: 45px;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  color: #434D9C;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.service .sub-title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.service img {
+  height: 130px;
+}
+
+.footer{
+  background-color: #7C7C7C;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+.img-white{
+  filter: invert(100%) sepia(0%) saturate(33%) hue-rotate(73deg) brightness(107%) contrast(107%);
+}
+
+.footer .phone-link{
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer .link{
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto Condensed";
+}
+
+.footer p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.footer .section{
+  margin-top: 20px;
 }
