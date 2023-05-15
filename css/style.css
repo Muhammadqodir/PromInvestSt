@@ -3,9 +3,11 @@
 body {
   font-family: "Montserrat", sans-serif !important;
 }
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 .c-primary {
   color: #434D9C;
 }
@@ -131,6 +133,22 @@ nav .navbar-nav li a {
   background: rgba(67, 77, 156, 0.1);
 }
 
+.border-box {
+  padding: 24px;
+  border: dashed 2px #FFA800;
+}
+
+.border-box .xol {
+  margin-left: -50px;
+  width: 100px;
+  z-index: 0;
+  height: 100px;
+  margin-top: 30px;
+  background-color: #FFA800;
+  position: absolute;
+  filter: blur(30px);
+}
+
 .box {
   margin: 24px;
 }
@@ -152,6 +170,16 @@ nav .navbar-nav li a {
   margin-left: -20px;
   width: 100px;
   height: 40px;
+  background-color: #434D9C;
+  position: absolute;
+  filter: blur(25px);
+}
+
+.xol-title .xol-center {
+  width: 100px;
+  height: 40px;
+  left: 45%;
+  margin-top: 20px;
   background-color: #434D9C;
   position: absolute;
   filter: blur(25px);
@@ -287,7 +315,7 @@ nav .navbar-nav li a {
   margin-bottom: 40px;
 }
 
-.partners .title{
+.partners .title {
   width: 100%;
 }
 
@@ -305,12 +333,12 @@ nav .navbar-nav li a {
   transform: .2s;
 }
 
-.m-50{
+.m-50 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.m-20{
+.m-20 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -333,7 +361,7 @@ nav .navbar-nav li a {
   transform: scale(1);
 }
 
-.tools-circle{
+.tools-circle {
   margin: auto;
   border-radius: 100px;
   cursor: pointer;
@@ -343,20 +371,20 @@ nav .navbar-nav li a {
   overflow: hidden;
 }
 
-.tools-circle:hover img{
+.tools-circle:hover img {
   width: 100%;
   transform: scale(1.5);
   padding: 0px !important;
   transition: 0.5s all ease-in-out;
 }
 
-.tools-circle:not(:hover) img{
+.tools-circle:not(:hover) img {
   transform: scale(1);
   width: 100%;
   transition: 0.5s all ease-in-out;
 }
 
-.projects .description{
+.projects .description {
   z-index: 9999999999999;
   position: absolute;
   bottom: 0px;
@@ -368,6 +396,7 @@ nav .navbar-nav li a {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -464,9 +493,11 @@ nav .navbar-nav li a {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -528,4 +559,103 @@ nav .navbar-nav li a {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #434D9C;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #434D9C;
+}
+
+.testimonials .swiper-slide {
+  opacity: 0.3;
+  transform: scale(0.8) !important;;
+  filter: blur(3px);
+  transition: .5s;
+}
+
+.swiper-button-prev-unique{
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 999999999;
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.swiper-button-next-unique{
+  right: 0px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 999999999;
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.testimonial-item .title{
+  font-size: 18px;
+  font-family: "Roboto Condensed";
+  color: #434D9C;
+  font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  .testimonials .swiper-slide-active {
+    filter: blur(0px);
+    opacity: 1;
+    transition: .5s;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials .swiper-slide-next {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.5) !important;
+    transition: .5s;
+  }
+  .testimonial-item .title{
+    font-size: 12px;
+    font-family: "Roboto Condensed";
+    color: #434D9C;
+    font-weight: 500;
+  }
 }
