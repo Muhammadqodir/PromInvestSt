@@ -17,6 +17,7 @@
   <!-- NAV-START -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light blur-nav">
     <img src="assets/logo.png" class="nav-logo">
+    <div class="vertical-line d-md-none d-lg-block"></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,6 +45,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
+        <div class="vertical-line d-md-none d-lg-block"></div>
         <img src="assets/search.svg" class="nav-search">
       </form>
     </div>
@@ -51,7 +53,7 @@
   <!-- NAV-END -->
 
   <!-- CAROUSEL-START -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" style="margin-top: 75px;" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -73,11 +75,12 @@
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <img width="40" src="assets/gallery/left.png">
       <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <img width="40" src="assets/gallery/right.png">
       <span class="sr-only">Next</span>
     </a>
   </div>
@@ -108,7 +111,7 @@
     <div class="center">
       <div class="static-title">
         <div class="sub-title">ПРЕИМУЩЕСТВА</div>
-        <div class="title">Наши преимущества</div>
+        <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
       </div>
 
       <div class="row justify-content-center">
@@ -253,34 +256,40 @@
 
       <div class="row">
         <div class="col-lg-3 col-md-6">
-          <div class="service">
-            <img src="assets/electro.png" onmouseover='changeSrc(this, "assets/electro_hover.png")'
-              onmouseout='changeSrc(this, "assets/electro.png")'>
-            <div class="title">
-              ЭЛЕКТРОМОНТАЖНЫЕ
-              РАБОТЫ
+          <a href="wiring.html">
+            <div class="service">
+              <img src="assets/electro.png" onmouseover='changeSrc(this, "assets/electro_hover.png")'
+                onmouseout='changeSrc(this, "assets/electro.png")'>
+              <div class="title">
+                ЭЛЕКТРОМОНТАЖНЫЕ
+                РАБОТЫ
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <div class="service">
-            <img src="assets/elab.png" onmouseover='changeSrc(this, "assets/elab_hover.png")'
-              onmouseout='changeSrc(this, "assets/elab.png")'>
-            <div class="title">
-              УСЛУГИ
-              ЭЛЕКТРО-ЛАБОРАТОРИИ
+          <a href="elab.html">
+            <div class="service">
+              <img src="assets/elab.png" onmouseover='changeSrc(this, "assets/elab_hover.png")'
+                onmouseout='changeSrc(this, "assets/elab.png")'>
+              <div class="title">
+                УСЛУГИ
+                ЭЛЕКТРО-ЛАБОРАТОРИИ
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <div class="service">
-            <img src="assets/eservice.png" onmouseover='changeSrc(this, "assets/eservice_hover.png")'
-              onmouseout='changeSrc(this, "assets/eservice.png")'>
-            <div class="title">
-              ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ
-              ЭЛЕКТРООБОРУДОВАНИЯ
+          <a href="service.html">
+            <div class="service">
+              <img src="assets/eservice.png" onmouseover='changeSrc(this, "assets/eservice_hover.png")'
+                onmouseout='changeSrc(this, "assets/eservice.png")'>
+              <div class="title">
+                ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ
+                ЭЛЕКТРООБОРУДОВАНИЯ
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="service">
@@ -299,7 +308,7 @@
   <!-- SERVICES-END -->
 
   <!-- PARTNERS-START -->
-  <div class="row partners">
+  <div class="row partners" style="width: 100%;">
     <div class="col-md-2">
       <img src="assets/partners/title.png" class="title">
     </div>
@@ -336,12 +345,12 @@
             проспект Кулакова 8Ш, офис 8</p>
         </div>
         <div class="col-md-4 section">
-          <a class="link" href="">ГЛАВНАЯ</a><br>
-          <a class="link" href="">ЭЛЕКТРОМОНТАЖ</a><br>
-          <a class="link" href="">ЭЛЕКТРО-ЛАБОРАТОРИЯ</a><br>
-          <a class="link" href="">ОБСЛУЖИВАНИЕ</a><br>
-          <a class="link" href="">НОРМАТИВНАЯ БАЗА</a><br>
-          <a class="link" href="">КОНТАКТЫ</a><br>
+          <a class="link" href="index.html">ГЛАВНАЯ</a><br>
+          <a class="link" href="wiring.html">ЭЛЕКТРОМОНТАЖ</a><br>
+          <a class="link" href="elab.html">ЭЛЕКТРО-ЛАБОРАТОРИЯ</a><br>
+          <a class="link" href="service.html">ОБСЛУЖИВАНИЕ</a><br>
+          <a class="link" href="normative_base.html">НОРМАТИВНАЯ БАЗА</a><br>
+          <a class="link" href="contacts.html">КОНТАКТЫ</a><br>
         </div>
         <div class="col-md-4 section" style="text-align: right;">
           Поиск
