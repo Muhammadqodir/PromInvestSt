@@ -116,7 +116,7 @@
         <div class="col-md-4">
           <input name="name" class="custom-input" placeholder="Ваше имя *">
 
-          <input name="name" class="custom-input" placeholder="+7 (___) ___ - __ - __ *">
+          <input name="name" id="phone_number" class="custom-input" data-inputmask-mask="+7 (999) 999-99-99" placeholder="+7 (___) ___ - __ - __ *">
 
           <input name="name" class="custom-input" placeholder="E-mail *">
         </div>
@@ -131,7 +131,7 @@
           Я даю согласие на обработку моих персональных данных
         </label>
       </div>
-      <div style="text-align: right;">
+      <div style="text-align: right; margin-top: 20px;">
         <button class="custom-btn" onclick="openDialog()">Отправить</button>
       </div>
     </div>
@@ -141,7 +141,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 section">
+        <div class="col-md-4 col-6 section">
           <img src="assets/logo-white.png" height="70px">
           <br>
           <br>
@@ -150,7 +150,7 @@
           <p>355000, г. Ставрополь,<br>
             проспект Кулакова 8Ш, офис 8</p>
         </div>
-        <div class="col-md-4 section">
+        <div class="col-md-4 col-6 section">
           <a class="link" href="index.html">ГЛАВНАЯ</a><br>
           <a class="link" href="wiring.html">ЭЛЕКТРОМОНТАЖ</a><br>
           <a class="link" href="elab.html">ЭЛЕКТРО-ЛАБОРАТОРИЯ</a><br>
@@ -159,7 +159,7 @@
           <a class="link" href="contacts.html">КОНТАКТЫ</a><br>
         </div>
         <div class="col-md-4 section" style="text-align: right;">
-          Поиск
+          
         </div>
       </div>
       <br>
@@ -201,8 +201,13 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-detect-breakpoint/src/bootstrap-detect-breakpoint.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  
   <script src="js/dialog.js"></script>
+
+  <script>
+    $("#phone_number").inputmask();
+  </script>
 </body>
 
 </html>

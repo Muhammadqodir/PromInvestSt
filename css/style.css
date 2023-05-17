@@ -9,6 +9,18 @@ body {
   line-height: 19px !important;
 }
 
+@media (min-width:320px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width:480px) {
+  body {
+    font-size: 17px !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;
@@ -29,25 +41,26 @@ html {
   margin-right: 20px;
 }
 
-.nav-link:not(:hover){
+.nav-link:not(:hover) {
   color: #000000 !important;
   font-family: "Roboto";
   font-weight: 500 !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #434D9C !important;
   font-family: "Roboto";
   font-weight: 500 !important;
 }
 
-.active .nav-link:not(:hover){
+.active .nav-link:not(:hover) {
   color: #434D9C !important;
 }
 
-.nav-item{
+.nav-item {
   text-align: center;
 }
+
 .nav-search {
   height: 24px;
   margin-left: 10px;
@@ -58,7 +71,7 @@ nav .navbar-nav li a {
   font-weight: 600 !important;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
   width: 8px !important;
   height: 8px !important;
   border-radius: 4px;
@@ -68,7 +81,7 @@ nav .navbar-nav li a {
   background-color: #434D9C !important;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
   width: 8px !important;
   height: 8px !important;
   border-radius: 4px;
@@ -234,7 +247,7 @@ nav .navbar-nav li a {
   filter: blur(25px);
 }
 
-.footer{
+.footer {
   margin-top: 80px !important;
 }
 
@@ -264,7 +277,7 @@ nav .navbar-nav li a {
   color: #fff;
 }
 
-li{
+li {
   margin-top: 10px;
 }
 
@@ -279,41 +292,81 @@ li{
   cursor: pointer;
 }
 
-.advantage .title {
-  font-size: 18px;
-  height: 45px;
-  font-weight: 400;
-  font-family: "Roboto Condensed";
-  color: #434D9C;
-  margin-top: 20px;
-  margin-bottom: 20px;
+@media (min-width:320px) {
+  .advantage .title {
+    font-size: 14px;
+    height: 45px;
+    font-weight: 400;
+    font-family: "Roboto Condensed";
+    color: #434D9C;
+    margin-top: 20px;
+  }
+  .advantage .sub-title {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .advantage:hover img {
+    height: 40px;
+    filter: invert(61%) sepia(22%) saturate(6303%) hue-rotate(0deg) brightness(100%) contrast(109%);
+    transition: .2s;
+  }
+  .advantage:not(:hover) img {
+    height: 40px;
+    filter: invert(0%) sepia(4%) saturate(16%) hue-rotate(112deg) brightness(97%) contrast(103%);
+    transition: .2s;
+  }
 }
 
-.advantage .sub-title {
-  font-size: 14px;
-  margin-bottom: 15px;
+@media (min-width:480px) {
+  .advantage .title {
+    font-size: 18px;
+    height: 45px;
+    font-weight: 400;
+    font-family: "Roboto Condensed";
+    color: #434D9C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .advantage .sub-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .advantage:hover img {
+    height: 80px;
+    filter: invert(61%) sepia(22%) saturate(6303%) hue-rotate(0deg) brightness(100%) contrast(109%);
+    transition: .2s;
+  }
+  .advantage:not(:hover) img {
+    height: 80px;
+    filter: invert(0%) sepia(4%) saturate(16%) hue-rotate(112deg) brightness(97%) contrast(103%);
+    transition: .2s;
+  }
 }
 
-.advantage:hover img {
-  height: 90px;
-  filter: invert(61%) sepia(22%) saturate(6303%) hue-rotate(0deg) brightness(100%) contrast(109%);
-  transition: .2s;
+@media (min-width:320px) {
+  .bg-box {
+    background-image: url("../assets/bg_m.png");
+    background-size: 80%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: #F7F7F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 15px white, -2px 2px 15px white, 2px -2px 15px white, -2px -2px 15px white;
+  }
 }
 
-.advantage:not(:hover) img {
-  height: 90px;
-  filter: invert(0%) sepia(4%) saturate(16%) hue-rotate(112deg) brightness(97%) contrast(103%);
-  transition: .2s;
-}
-
-.bg-box {
-  background-image: url("../assets/bg_0.png");
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-color: #F7F7F7;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-shadow: 2px 2px 15px white, -2px 2px 15px white, 2px -2px 15px white, -2px -2px 15px white;
+@media (min-width:480px) {
+  .bg-box {
+    background-image: url("../assets/bg_0.png");
+    background-size: 40%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #F7F7F7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-shadow: 2px 2px 15px white, -2px 2px 15px white, 2px -2px 15px white, -2px -2px 15px white;
+  }
 }
 
 .blur-nav {
@@ -328,14 +381,28 @@ li{
   cursor: pointer;
 }
 
-.service .title {
-  font-size: 18px;
-  height: 45px;
-  font-weight: 400;
-  font-family: "Roboto Condensed";
-  color: #434D9C;
-  margin-top: 20px;
-  margin-bottom: 20px;
+@media (min-width:320px) {
+  .service .title {
+    font-size: 14px;
+    height: 45px;
+    font-weight: 400;
+    font-family: "Roboto Condensed";
+    color: #434D9C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:480px) {
+  .service .title {
+    font-size: 18px;
+    height: 45px;
+    font-weight: 400;
+    font-family: "Roboto Condensed";
+    color: #434D9C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .service .sub-title {
@@ -344,7 +411,7 @@ li{
 }
 
 .service img {
-  height: 130px;
+  width: 70%;
 }
 
 .footer {
@@ -440,9 +507,22 @@ li{
   border-radius: 100px;
   cursor: pointer;
   margin-bottom: 30px;
-  width: 200px;
-  height: 200px;
+  width: 100%;
   overflow: hidden;
+}
+
+@media (min-width:320px) {
+  .tools .col-3 {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (min-width:480px) {
+  .tools .col-3 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }
 
 .tools-circle:hover img {
@@ -523,7 +603,11 @@ li{
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 60px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.portfolio-info b {
+  font-family: "Roboto";
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -640,13 +724,25 @@ li{
 # Testimonials
 --------------------------------------------------------------*/
 
+@media (min-width:320px) {
+  .testimonials .testimonial-item {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width:1173px) {
+  .testimonials .testimonial-item {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+}
+
 .testimonials .testimonial-item {
   box-sizing: content-box;
   background: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
-  margin-top: 80px;
   text-align: center;
   transition: 0.3s;
 }
@@ -738,10 +834,20 @@ li{
   min-height: 270px;
 }
 
-.book {
-  text-align: left;
-  width: 180px;
-  padding: 10px;
+@media (min-width:320px) {
+  .book {
+    text-align: left;
+    width: 130px;
+    padding: 10px;
+  }
+}
+
+@media (min-width:480px) {
+  .book {
+    text-align: left;
+    width: 180px;
+    padding: 10px;
+  }
 }
 
 .custom-btn:not(:hover) {
@@ -765,7 +871,8 @@ li{
   font-size: 18px;
   transition: .3s;
 }
-custom-btn:focus{
+
+custom-btn:focus {
   outline: none !important;
 }
 
@@ -783,7 +890,7 @@ custom-btn:focus{
   width: 100%;
   font-size: 14px !important;
   border-radius: 24px;
-  border: solid 2px #ccc;
+  border: solid 1px #ccc;
   margin-bottom: 14px !important;
   transition: .2s;
 }
@@ -793,16 +900,16 @@ custom-btn:focus{
   width: 100%;
   font-size: 14px !important;
   border-radius: 24px;
-  border: solid 2px #434D9C;
+  border: solid 1px #434D9C;
   margin-bottom: 14px !important;
   transition: .2s;
 }
 
-.portfolio-item li{
+.portfolio-item li {
   margin-top: 0px !important;
 }
 
-.success-dialog{
+.success-dialog {
   position: fixed;
   z-index: 99999999;
   top: 0px;
@@ -815,7 +922,7 @@ custom-btn:focus{
   text-align: center;
 }
 
-.success-dialog .dialog{
+.success-dialog .dialog {
   padding: 30px;
   position: relative;
   background-color: #fff;
@@ -832,17 +939,27 @@ custom-btn:focus{
   padding-bottom: 80px;
 }
 
-.success-dialog .xol{
+.success-dialog .xol {
   position: absolute;
   left: 0px;
   bottom: 0px;
   border-radius: 30px;
 }
 
-.success-dialog .close-btn{
+.success-dialog .close-btn {
   position: absolute;
   right: 40px;
   bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.comma {
+  text-align: center;
+}
+
+.click {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }

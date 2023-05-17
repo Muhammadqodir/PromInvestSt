@@ -17,7 +17,7 @@
   <!-- NAV-START -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light blur-nav">
     <img src="assets/logo.png" class="nav-logo">
-    <div class="vertical-line d-md-none d-lg-block"></div>
+    <div class="vertical-line d-md-none d-none d-lg-block"></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <div class="vertical-line d-md-none d-lg-block"></div>
+        <div class="vertical-line d-md-none d-none d-lg-block"></div>
         <img src="assets/search.svg" class="nav-search">
       </form>
     </div>
@@ -83,12 +83,16 @@
       <img width="40" src="assets/gallery/right.png">
       <span class="sr-only">Next</span>
     </a>
+    <img src="assets/click.png" class="click d-sm-block d-md-none">
   </div>
   <!-- CAROUSEL-END -->
 
   <!-- ABOUT-START -->
   <div class="box-gray">
     <div class="container">
+      <div class="comma d-sm-block d-md-none">
+        <img src="assets/comma.png">
+      </div>
       <p>
         <b>ООО «Проминвест-Ст»</b> – это сплоченная команда высококвалифицированных профессионалов, обладающих
         передовыми
@@ -115,7 +119,7 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/calculation.png">
           <div class="title">
             БЫСТРЫЙ РАСЧЕТ
@@ -129,7 +133,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/team.png">
           <div class="title">
             ПРОФФЕСИОНАЛЬНАЯ<br>
@@ -144,7 +148,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/quality.png">
           <div class="title">
             ВЫСОКОЕ КАЧЕСТВО<br>
@@ -160,7 +164,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/lab.png">
           <div class="title">
             ЭЛЕКТРО-ЛАБОРАТОРИЯ
@@ -173,7 +177,7 @@
         </div>
 
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/service.png">
           <div class="title">
             ПОСТГАРАНТИЙНОЕ
@@ -189,7 +193,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/reliability.png">
           <div class="title">
             НАДЕЖНОСТЬ
@@ -205,7 +209,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 advantage">
+        <div class="col-lg-3 col-6 advantage">
           <img src="assets/application.png">
           <div class="title">
             СПЕКТОР ПРИМЕНЕНИЯ
@@ -255,7 +259,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-6">
           <a href="wiring.html">
             <div class="service">
               <img src="assets/electro.png" onmouseover='changeSrc(this, "assets/electro_hover.png")'
@@ -267,7 +271,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-6">
           <a href="elab.html">
             <div class="service">
               <img src="assets/elab.png" onmouseover='changeSrc(this, "assets/elab_hover.png")'
@@ -279,7 +283,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-6">
           <a href="service.html">
             <div class="service">
               <img src="assets/eservice.png" onmouseover='changeSrc(this, "assets/eservice_hover.png")'
@@ -291,7 +295,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-6">
           <div class="service">
             <img src="assets/rent.png" onmouseover='changeSrc(this, "assets/rent_hover.png")'
               onmouseout='changeSrc(this, "assets/rent.png")'>
@@ -335,7 +339,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 section">
+        <div class="col-md-4 col-6 section">
           <img src="assets/logo-white.png" height="70px">
           <br>
           <br>
@@ -344,7 +348,7 @@
           <p>355000, г. Ставрополь,<br>
             проспект Кулакова 8Ш, офис 8</p>
         </div>
-        <div class="col-md-4 section">
+        <div class="col-md-4 col-6 section">
           <a class="link" href="index.html">ГЛАВНАЯ</a><br>
           <a class="link" href="wiring.html">ЭЛЕКТРОМОНТАЖ</a><br>
           <a class="link" href="elab.html">ЭЛЕКТРО-ЛАБОРАТОРИЯ</a><br>
@@ -353,7 +357,7 @@
           <a class="link" href="contacts.html">КОНТАКТЫ</a><br>
         </div>
         <div class="col-md-4 section" style="text-align: right;">
-          Поиск
+          
         </div>
       </div>
       <br>
