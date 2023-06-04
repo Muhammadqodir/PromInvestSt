@@ -171,6 +171,7 @@ nav .navbar-nav li a {
   font-size: 50px;
   font-weight: bold;
   color: #434D9C;
+  line-height: 1;
   opacity: 0.04;
   transition: .5s;
 }
@@ -179,6 +180,7 @@ nav .navbar-nav li a {
   font-size: 36px;
   font-weight: bold;
   color: #434D9C;
+  line-height: 1;
   opacity: 0.1;
   transition: .5s;
 }
