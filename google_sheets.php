@@ -19,7 +19,8 @@ $number = " ".$_POST["phone"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
-if($userName == "" && strlen($number) != 18 && $email == "" && $message == ""){
+
+if($userName == "" || strlen($number) != 19 || $email == "" || $message == ""){
     session_start();
     $_SESSION["message"] = "Заполните все поля!";
     header('Location: contacts.php');
