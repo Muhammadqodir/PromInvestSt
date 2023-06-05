@@ -133,26 +133,6 @@ $json = json_decode(file_get_contents("db.json"), true);
     </div>
   </div>
 
-  <div class="success-dialog" id="success-dialog">
-    <div class="dialog">
-      <img src="assets/message.png" width="300">
-      <br><br>
-      <h4 class="c-primary">
-        Спасибо!
-      </h4>
-      <p>
-        Ваша заяка отправлена
-        и принята в обработку
-      </p>
-      <p>
-        Мы свяжемся с Вами в ближайшее время
-      </p>
-      <button class="custom-btn close-btn" onclick="closeDialog()">
-        Закрыть
-      </button>
-    </div>
-  </div>
-
   <!-- Подключаем скрипты -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -163,7 +143,6 @@ $json = json_decode(file_get_contents("db.json"), true);
   <script src="js/dialog.js"></script>
 
   <script>
-    $("#phone_number").inputmask();
 
     function calculateTotal() {
       var total = 0;
